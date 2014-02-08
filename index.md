@@ -1,46 +1,37 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+#title: prisconapoli
+tagline: ...the time has come to talk of many things
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## About the (damn) author 
+Hi, my name is Prisco Napoli. I make software. In this blog you’ll find articles about my three big passions: **Maths**, **Physics** and **Computer Science**. Hope you’ll enjoy it! 
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Wait wait wait!!! ... I know what someone of you is already thinking *"how could be this kind of blog enjoyable? It couldn't be better a cooking blog?"* 
+ ... my friends, if I had deciding to write a cooking blog, probably you follow the risk of die poisoned among the fourth and sixth post. So, for safety of you and your family, settle for this :-) 
 
-## Update Author Attributes
+Don't worry... I promise that I will not bore you too much.  But, in any case, keep in minds the phrase on the cover of [The Hitchhiker's Guide to the Galaxy](http://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)  
+<div style="text-align:center" markdown="1">
+![]({{ site.url }}/assets/images/don_t_panic.jpg)
+</div>
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+If you someone of you is curious to know more about myself and my experience, feel free to contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+So let's start... the time has come to talk of many things....
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+## Recent Posts
 
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+Here's a list of the "last posts".
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+    </li>
   {% endfor %}
 </ul>
 
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
