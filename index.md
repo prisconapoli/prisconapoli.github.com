@@ -18,7 +18,7 @@ Don't worry... I promise that I'll not bore you too much.  Anyway, in any case, 
 </div>
 
 
-If you someone of you is curious to know more about myself and my experience, feel free to contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
+If someone of you is curious to know more about myself and my experience, please contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
 
 So let's start... the time has come to talk of many things....
 
