@@ -13,7 +13,9 @@ Wait wait wait!!! ... I know what someone of you is already thinking *"how could
 
 Don't worry... I promise that I'll not bore you too much.  Anyway, in any case, please keep in minds the phrase on the cover of [The Hitchhiker's Guide to the Galaxy](http://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)  
 
+<div style="text-align:center" markdown="1">
 ![]({{ site.url }}/assets/images/don_t_panic.jpg)
+</div>
 
 
 If you someone of you is curious to know more about myself and my experience, feel free to contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
