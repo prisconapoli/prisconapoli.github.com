@@ -12,9 +12,13 @@ Wait wait wait!!! ... I know what someone of you is already thinking *"how could
  ... my friends, if I had deciding to write a cooking blog, probably you follow the risk of die poisoned among the fourth and sixth post. So, for safety of you and your family, settle of this :-) 
 
 Don't worry... I promise that I'll not bore you too much.  Anyway, in any case, please keep in minds the phrase on the cover of [The Hitchhiker's Guide to the Galaxy](http://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)  
-<div style="text-align:center" markdown="1">
-    ![]({{ site.url }}/assets/images/don_t_panic.jpg)
-</div>
+
+![]({{ site.url }}/assets/images/don_t_panic.jpg)
+
+
+If you someone of you is curious to know more about myself and my experience, feel free to contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
+
+So let's start... the time has come to talk of many things....
 
 ## Recent Posts
 
