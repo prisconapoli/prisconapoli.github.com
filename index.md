@@ -1,6 +1,6 @@
 ---
 layout: page
-#title: prisconapoli
+title: prisconapoli
 tagline: ...the time has come to talk of many things
 ---
 {% include JB/setup %}
