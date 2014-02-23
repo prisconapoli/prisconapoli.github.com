@@ -224,3 +224,88 @@ Urefs must be initialized like all references, and is the kind of the initialize
 * If the initialize expression is an lvalue, the uref becomes an lvalue reference
 * If the initialize expression is an rvalue, the uref  becomes an rvalue reference.
 
+After this brief digression on the Universal Reference, let's move back to our example. How is possible that if we call the template function *funcTempl(T&&)* passing *f1* as argument, the istantiation is a function that get an *lref (T&)* as parameter and not an *rref (T&&)*?
+
+     template<typename T>
+     void funcTempl(Foo&)     ⇒    void funcTempl(Foo&)
+
+This *mistery* can be easily revealed thanks to the **Reference Collapsing** and its rules introduced by C++11:
+
+* **T& &    ⇒  T&**
+* **T&& &   ⇒  T&**
+* **T& &&   ⇒  T&**
+* **T&& &&   ⇒  T&&**
+
+How you can see, all the combinations involving an lref (T&) collapse into an lref. An rref (T&&) is obtained only when two rrefs are involved.
+
+> Check always the reality of the situation!
+
+Now, let's go back to our example and find a way to pass *f1* to *funcTempl()* in a proper way. In other words, we need something to turn lvalues into rvalues. How we can reach our goal?
+
+Luckily, C++11 introduce a new function in **std library** that comes to our rescue. This function is called  [std::move](http://it.cppreference.com/w/cpp/utility/move), and its goal is to turn its argument into an rvalue. Nothing else is done.
+ 
+Let's try to change our code for use *std::move*:
+{% highlight cpp %}
+#include <utility>
+class Foo {};
+Foo createFoo() {
+    return Foo();
+};
+template <typename T>
+void funcTempl(T&&) {
+};
+int main() {
+    Foo f1; 
+    funcTempl(std::move(f1));
+    funcTempl(createFoo());
+    return 0;
+}
+{% endhighlight %}
+
+If we run **g++** with the *fdump-tree-original* option, we see (line 25) that T's deduced type is is a non-reference as expected. Great!
+
+{% highlight cpp linenos %}
+;; Function Foo createFoo() (null)
+;; enabled by -tree-original
+<<cleanup_point return <retval> = TARGET_EXPR <D.4351, {}>>>;
+
+;; Function constexpr typename std::remove_reference< <template-parameter-1-1> >::type&& std::move(_Tp&&) 
+   [with _Tp = Foo&; typename std::remove_reference< <template-parameter-1-1> >::type = Foo] (null)
+;; enabled by -tree-original
+<<< Unknown tree: must_not_throw_expr
+  return <retval> = (struct type &) (struct type *) NON_LVALUE_EXPR <(struct type &) __t>
+   >>>;
+
+;; Function int main() (null)
+;; enabled by -tree-original
+{
+  struct Foo f1;
+    struct Foo f1;
+  <<cleanup_point <<< Unknown tree: expr_stmt
+  funcTempl<Foo> ((struct Foo &) (struct type *) std::move<Foo&> ((struct Foo &) &f1)) >>>>>;
+  <<cleanup_point <<< Unknown tree: expr_stmt
+  funcTempl<Foo> ((struct Foo &) &TARGET_EXPR <D.4393, createFoo ()>) >>>>>;
+  return <retval> = 0;
+}
+return <retval> = 0;
+
+;; Function void funcTempl(T&&) [with T = Foo] (null)
+;; enabled by -tree-original
+
+{% endhighlight %}
+
+In this post I discussed briefly about the concepts of lvalues references and rvalue references, the useful of Move Semantics for increasing the performance of your programs and what pitfalls may arise when rvalue references  are used with templates functions. My suggestion is to further read more articles on these arguments (below some good links). 
+
+Finally, If you liked this post, please leaves a comment or share it.
+
+##Further Information
+
+[C++11](http://en.wikipedia.org/wiki/C%2B%2B11)
+
+[A Brief Introduction to Rvalue References](http://www.artima.com/cppsource/rvalue.html)
+
+[C++ Rvalue References Explained](http://thbecker.net/articles/rvalue_references/section_01.html)
+
+[Want Speed? Pass by Value](http://cpp-next.com/archive/2009/08/want-speed-pass-by-value/)
+
+[Universal References in C++11](http://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers)
