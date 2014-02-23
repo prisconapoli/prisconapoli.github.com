@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [rvalue, lvalue, rref, lref, std::move, references, template, c++, c++11]
+tags : [rvalue, lvalue, rref, lref]
 ---
 {% include JB/setup %}
 
