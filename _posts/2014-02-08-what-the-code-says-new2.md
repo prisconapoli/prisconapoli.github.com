@@ -1,10 +1,9 @@
 ---
 layout: post
-title : What the code says? 
+title : "What the code says?" 
 category: lesson
 tags: [rvalue, lvalue, rref, lref, std::move, references, template, c++, c++11]
 ---
-
 {% include JB/setup %}
 
 **On the power of the rvalues references and the different meanings of *&&* when this is used in template functions**
