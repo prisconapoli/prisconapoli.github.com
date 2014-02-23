@@ -2,7 +2,7 @@
 layout: post
 title : What the code says? 
 category: lesson
-tags: [rvalue, lvalue, rref, lref, std::move, references, template, c++, c++11]
+tags: [rvalue, lvalue, rref, lref, std::move, references, template, 'c++', 'c++11']
 ---
 
 {% include JB/setup %}
