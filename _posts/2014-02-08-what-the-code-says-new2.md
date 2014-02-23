@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags: [rvalue, lvalue, rref, lref, std::move, references, template]
+tags: [rvalue, lvalue, rref, lref, references, template]
 ---
 {% include JB/setup %}
 
