@@ -1,5 +1,6 @@
 ---
 layout: post
+title : Test
 category : lessons
 tags : [rvalue, lvalue, rref, lref, references, template]
 ---
