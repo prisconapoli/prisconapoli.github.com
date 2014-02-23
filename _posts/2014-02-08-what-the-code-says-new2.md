@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 tagline: "Supporting tagline"
-tags : [rvalue, lvalue, rref, lref]
+tags : [rvalue, lvalue, rref, lref, references, template]
 ---
 {% include JB/setup %}
 
