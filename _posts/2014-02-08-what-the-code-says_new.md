@@ -1,12 +1,15 @@
 ---
 layout: post
-title : What the code says? 
-category: lessons
-tags: [rvalue, lvalue, rref, lref, std::move, references, template, c++, c++11]
+category : lessons
 tagline: "Supporting tagline"
+tags : [intro, beginner, jekyll, tutorial]
 ---
-
 {% include JB/setup %}
+
+This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
+Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
+
+## Overview
 
 **On the power of the rvalues references and the different meanings of *&&* when this is used in template functions**
 
