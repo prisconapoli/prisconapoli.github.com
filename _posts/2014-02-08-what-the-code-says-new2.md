@@ -1,7 +1,6 @@
 ---
 layout: post
 category: lesson
-tags: [rvalue, lvalue, rref, lref, references, template]
 ---
 {% include JB/setup %}
 
