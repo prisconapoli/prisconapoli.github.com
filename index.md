@@ -24,7 +24,7 @@ So let's start... the time has come to talk of many things....
 
 ## Recent Posts
 
-Take a look at my "last posts":
+Take a look at my **last posts**:
 
 <ul class="posts">
   {% for post in site.posts %}
