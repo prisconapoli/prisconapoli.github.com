@@ -1,8 +1,8 @@
 ---
 layout: post
-title : "What the code says?" 
-category: lesson
-tags: [rvalue, lvalue, rref, lref, std::move, references, template, c++, c++11]
+category : lessons
+tagline: "Supporting tagline"
+tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
