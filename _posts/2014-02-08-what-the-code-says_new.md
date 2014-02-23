@@ -11,5 +11,4 @@ Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 
 ## Overview
 
-
 Here we are. In this post I’ll introduce you about the power of the **rvalue references (rrefs)** and what pitfalls may arise when these latter are used as arguments in **templates functions**.
