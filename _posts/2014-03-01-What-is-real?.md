@@ -5,7 +5,7 @@ tags: [quantum physics, electron, atom, photon, Newton, Max Planck, Albert Einst
 ---
 {% include JB/setup %}
 
-####On the oddities of Quantum Physics - Part 1
+**On the oddities of Quantum Physics - Part 1**
 
 <!--more-->
 
