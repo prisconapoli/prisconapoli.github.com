@@ -55,7 +55,7 @@ Remember to test as much as possible. Remember to test each line of your code. R
 
 **Ten.** Professionals are often heroes. But not because they try to be. Professionals becomes heroes when they get a job done well, on time and on budget.
 
-**Be hero. Everyday.**
+**Done a good job. Everyday.**
 
 
 ##Further Information

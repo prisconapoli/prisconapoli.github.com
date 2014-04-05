@@ -134,7 +134,7 @@ In the second part of this post, we will see in detail what all this means, star
 
 
 ##Further Information
-More of the information in this articles comes from the wonderful book [The Search for Superstrings, Symmetry, and the Theory of Everything](http://books.google.ie/books/about/The_Search_for_Superstrings_Symmetry_and.html?id=IqXc9J4WbiIC&redir_esc=y) written by John Gribbin. Below more interesting lectures:
+More of the information in this article comes from the wonderful book [The Search for Superstrings, Symmetry, and the Theory of Everything](http://books.google.ie/books/about/The_Search_for_Superstrings_Symmetry_and.html?id=IqXc9J4WbiIC&redir_esc=y) written by John Gribbin. Below more interesting lectures:
 
 [The Road to Reality: A Complete Guide to the Laws of the Universe](http://books.google.ie/books/about/The_Road_to_Reality.html?id=jjG_ngEACAAJ&redir_esc=y), by Roger Penrose
 
