@@ -59,10 +59,11 @@ unsigned length = 1500;
 if (length > (unsigned)(start - end)) {
     printf("Exceed limit !\n");
     return -1;
-    }
+}
 {% endhighlight %}
 
 See you for the next post.
+
 
 PS. If someone of you is curious to know more about the first question (why I didn't find the warning on my sandbox), well... the reason was due a different level of optimization specified for the build and the local sandbox.
 
