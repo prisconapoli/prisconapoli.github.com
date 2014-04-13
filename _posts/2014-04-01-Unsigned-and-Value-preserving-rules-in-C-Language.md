@@ -24,11 +24,11 @@ This post is about the second question. What happen when an unsigned type is pro
 Look at the code below that shows the issue in a simplified way. Image you have an object called *paylaod* that simply represent an array of bytes, and you want check if the payload has a proper size, suppose 1500. The funtions *start()* and *end()* return respectively a pointer to the first and last bytes in the paylod.
  
 {% highlight cpp linenos %}
-uint8_t *start = payload.start();
-uint8_t *end = payload.end();
+uint8_t start = payload.start();
+uint8_t end = payload.end();
 unsigned length = 1500;
 //rest of you code
-if (length > start - end) {
+if (length > end - start) {
     printf("Exceed limit !\n");
     return -1;
 }
@@ -36,7 +36,7 @@ if (length > start - end) {
 
 The warning was raised at line 5.
 
-Apparentely all seems fine: *start* and *end* are both pointer to uint8_t. *length* is unsigned. Compare unsigned with unsigned doesn't broke the rules of the languade, so what is realy happening when **gcc** raise the warning for comparison between signed and unsigned values?
+Apparentely all seems fine: *start* and *end* are both uint8_t. *length* is unsigned. Compare unsigned with unsigned doesn't broke the rules of the languade, so what is realy happening when **gcc** raise the warning for comparison between signed and unsigned values?
 
 To explain this, let me introduce you the *unsigned preserving* and *value preserving* rules.
 
