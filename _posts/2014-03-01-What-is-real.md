@@ -14,6 +14,7 @@ In this post I discuss the fascinating discoveries and the intellectual challang
 Our roadmap is (quite) easy… I'll start with a brief introduction of the atom model and the main characteristics of the QF. Then we'll see how QF is born starting from the classical concepts of matter and light. We'll discuss some famous experiments and, finally, explain the implications of the theory in our lifes.
 
 > Like a Lego, everithing is mades by tiny (but really cool) parts
+
 Quantum physics appeared in the early years of twentieth century as a result of the studies of the most important physicists of the time as [Max Planck](http://en.wikipedia.org/wiki/Max_Planck), [Albert Einstein](http://en.wikipedia.org/wiki/Albert_Einstein) and [Erwin Schrödinger](http://en.wikipedia.org/wiki/Erwin_Schrödinger). It was more than a new theory to describe the sub-atomic world. It really caused a **conceptual earthquake** that posed serious problems about the conception of the world and the reality. 
 
 Indeed, at the end of 1800 the idea that everything in the Universe is made up of tiny particles was not a novelty. This idea goes back to Democritus, an ancient Greek philosopher lived around 400 BC. Democritus said that everything in the world is composed of *atoms* which are physically, but not geometrically, *indivisible*. They have always been, and always will be, in *motion*. There is an *infinite number of atoms* and *kinds of atoms*, which differ in shape and size. However, only during the **nineteenth century** that chemists were able to **prove** that Democritus' Theory was effectively right.
@@ -30,13 +31,15 @@ The model of the atom as it is known today dates back to the studies of [Ernest 
 
 Ernest Ruthefort proved also how the atoms of an element can turn into atoms of another element. During this process, called *radioactivity*, the atoms can emit two types of radiations, respectively called **alpha** and **beta** radiations. The atom's chemical properties determine the large amount of elements found in nature. These properties depend in turn by the cloud of electrons around the nucleus, which is in such way the visible face that every atom shows to the other ones. Indeed, atoms with identical chemical properties have the same number of electrons and protons, but could have different masses due the different number of neutrons. These kind of atoms are called *isotopes*.
 
->We were almost there… 
+>We were almost there…
+
 During the last years of nineteenth century seemed that theoretical physics had served its purpose and had arrived at destination. There was an excellent theory on the light propagation, the [Newton's Gravity Laws](http://en.wikipedia.org/wiki/Newton's_laws_of_motion) and, finally, the idea that everything in the Universe was made by atoms. But during the first 30 years of the 1900, all these theories have been surpassed.
 
 Firstly, was discovered that the behavior of the light can  be explained sometimes in terms of massless *particles* called **photons**, and not always in terms of *waves* as believed until then. Secondly, [Albert Einstein](http://en.wikipedia.org/wiki/Albert_Einstein) showed the real nature of the Space, Time and Gravity with his **Theory of Relativity**.
 A new world vision had gone up, totally different from the oldest. This vision said that there are no pure particles or pure waves objects, but at the fundamental level **everithing** can be explained in terms of waves and particles (wavicles). The first upsetting result was that is impossible predict with an **absolute precision** the result of an atomic experiment or any other **event** in the Universe, and that our world is **governed by chance**. Another unbelievable consequence of QF is that we cannot, *by principle*,  **know simultaneously** both the **position** of an object and its **momentum** (ie where it is going). These things upset the physicists of that epoch which considered the Quantum Phisics as an heresy.
 
 >A blast in the past
+
 The best way to approach the basic of Quantum Theory is starting from [Maxwell's](http://en.wikipedia.org/wiki/James_Clerk_Maxwell) work on the unification of **Electric** and **Magnetic forces**. 
 Maxwell, as like the most of other scientists which lived in the first half of 1800, was fascinated by the fact that the current flow in a wire produce a magnetic field, as well the variation of a magnet around a metallic ring produces an electric current which flow inside it. 
 **Moving electricity make magnetism and, in the same time, moving magnetism make electricity**. Maxwell had the great insight to think Electric and Magnetic forces, which until then were believed separated, as two side of the same coin, an *Electromagnetic force*.
@@ -119,6 +122,7 @@ A wave function is very strong in a small region, which corresponds to a positio
 <div style="text-align:center" markdown="1">
 ![]({{ site.url }}/assets/images/post2/WaveCollapse.jpg)
 </div>
+
 ######Wavefunction collapse (Credit:http://blogs.scientificamerican.com, Image by A. Friedman)
 
 
