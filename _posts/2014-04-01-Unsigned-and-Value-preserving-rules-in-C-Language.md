@@ -21,7 +21,7 @@ I started work for fixing the build as soon as possible, so I asked myself two q
 
 This post is about the second question. What happen when an unsigned type is promoted to a **larger** type? Should the signed be preserved or not?(e.g. promotion to a larger signed or unsigned type)? I'll show you that the answer is no unique, and depends on how much the larger type is *truly* larger.
 
-Look at the code below that shows the issue in a simplified way. Image you have an object called *paylaod* that simply represent an array of bytes, and you want check if the payload has a proper size, suppose 1500. The funtions *start()* and *end()* return respectively a pointer to the first and last bytes in the paylod.
+Look at the code below that shows the issue in a simplified way. Image you have an object called *paylaod* that simply represent an array of bytes, and you want check if the payload has a proper size, suppose 1500. The funtions *start()* and *end()* return respectively the position of the first and last bytes in the paylod.
  
 {% highlight cpp linenos %}
 uint8_t start = payload.start();
@@ -47,16 +47,16 @@ On some machines, short int is smaller than int, but on some machines, they're t
 
 In ANSI C Standard, the **value preserving rule** is applyed ( it reduce the number of cases where these surprising results occur). 
 
-So what happened to the code above? The difference between *uint8_t pointer* was promoted to an **int** before the cmparison; but *int* is *signed*, and comparing a signed value with an unsigned value (length) is not permitted by the C Language rules.
+So what happened to the code above? The difference between *end* and *size* was promoted to an **int** before the comparison; but *int* is *signed*, and comparing a signed value with an unsigned value (*length*) is not permitted by the C Language rules.
 
 To avoid surprises it's best to avoid mixing signed and unsigned types in the same expression. To solve the problem in the code above, an explicit cast can be used to remove any ambiguous promotion type.
 
 {% highlight cpp linenos %}
-uint8_t *start = payload.start();
-uint8_t *end = payload.end();
+uint8_t start = payload.start();
+uint8_t end = payload.end();
 unsigned length = 1500;
 //rest of you code
-if (length > (unsigned)(start - end)) {
+if (length > (unsigned)(end - start)) {
     printf("Exceed limit !\n");
     return -1;
 }
