@@ -40,16 +40,16 @@ Apparentely all seems fine: *start* and *end* are both uint8_t. *length* is unsi
 
 To explain this, let me introduce you the *unsigned preserving* and *value preserving* rules.
 
-The **unsigned preserving rule** says that the promoted type is always *unsigned*, while the **value preserving rule** says that the conversion **depends on the actual sizes** of the original and promoted types. If the promoted type can represent all the values of the original (e.g unsigned type as signed value), then the promoted type is *signed*. If the two types have the same size, then the promoted type is *unsigned*.
+The **unsigned preserving rule** says that the promoted type is always *unsigned*. The consequence of this easy rule is that sometimes a negative result could lose its sign. 
 
-The first consequence of this latter rule is that the results will vary from machine to machine due the actual sizes of the types used in making the decision. 
+Instead the **value preserving rule** says that the conversion **depends on the actual sizes** of the original and promoted types. If the promoted type can represent all the values of the original (e.g unsigned type as signed value), then the promoted type is *signed*. If the two types have the same size, then the promoted type is *unsigned*. The consequence of this latter rule is that the results will vary from machine to machine due the actual sizes of the types used in making the decision. 
 On some machines, short int is smaller than int, but on some machines, they're the same size. On some machines, int is smaller than long int, but on some machines, they're the same size.
 
 In ANSI C Standard, the **value preserving rule** is applyed (it reduce the number of cases where these surprising results occur). 
 
-So what happened to the code above? The difference between *end* and *size* was promoted to an **int** before the comparison; but *int* is *signed*, and comparing a signed value with an unsigned value (*length*) is not permitted by the C Language rules.
+So what happened to the code above? The difference between *end* and *size* was promoted to an **int** before the comparison; but *int* is *signed*, and comparing a signed value with an unsigned value (*length*) is not permitted by the **Ansi C** compilers.
 
-To avoid surprises it's best to avoid mixing signed and unsigned types in the same expression. To solve the problem in the code above, an explicit cast can be used to remove any ambiguous promotion type.
+To avoid surprises it's best don't mix signed and unsigned types in the same expression. To solve the problem in the code above, an explicit cast can be used to remove any ambiguous promotion type.
 
 {% highlight cpp linenos %}
 uint8_t start = payload.start();
@@ -63,20 +63,27 @@ if (length > (unsigned)(end - start)) {
 {% endhighlight %}
 
 
-The following program will print a different message under ANSI and pre-ANSI compilers:
+Depending on whether you compile the following program under **K&R** or **ANSI C**, the expression inside the *if statement *will be evaluated differently:
+
 {% highlight cpp linenos %}
 main() {
 if ( -1 < (unsigned char) 1 )	printf("-1 is less than (unsigned char) 1: ANSI semantics ");else 
-	printf("-1 NOT less than (unsigned char) 1: K&Rsemantics "); }
+	printf("-1 NOT less than (unsigned char) 1: K&R semantics ");
+}
 {% endhighlight %}
 
-Depending on whether you compile it under **K&R** or **ANSI C**, the expression will be evaluated differently.
 The *unsigned preserving approach* (K&R C) force a negative result to lose its sign. This means that -1 which has **0xFF** as binary represantation, is evaluated as an unsigneed value: **255**! 
+Using the *value preserving approach* (**ANSI C**) the code above prints the rigth result.
+
+You should always remember this two rules and try to minimize the use of unsigned types in yours programs. Specifically, don't use an **unsigned** type to represent a quantity just because it will never be negative.Is better to use a **signed** type like **int** to avoid undesiderable promotion, and reserve the use of unsigned types only for bitfields and binary masks.
+
+Finally, to avoid surprise in signed and unsigned type mixing, remember to use C style *cast* or **static_cast** in C++ programs to make all the operands signed or unsigned.
 
 See you for the next post.
 
 
-PS. If someone of you is curious to know more about the first question *why I didn't find the warning on my sandbox*, well... the reason was due a different level of optimization specified for the build and the local sandbox. Using the value preserving approach (ANSI C), the code above prints the rigth result.
+PS. If someone of you is curious to know more about the first question *why I didn't find the warning on my sandbox*, well... the reason was due a different level of optimization specified for the build and my local sandbox.
+But I will talk about this in another post… 
  
 
 ##Further Information
