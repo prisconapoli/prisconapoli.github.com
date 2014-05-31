@@ -132,6 +132,7 @@ The great lesson that comes from Shrodinger's work, and that I'll go deepen in t
 The implications of this are truly remarkable and profound. On  one hand we can no longer say that an electron in principle be identified as a single object, which starts from a point in our experiment and follows a unique path through all of our experiment. The classic concept of trajectory, a consequence of the Newtonian Theory, is abandoned in Quantum Physics. Quantum Theory speaks in terms of events that can happen in a certain order but that does not tell us anything about what can happen to a particle in a certain event when this is not observed. All we can say is that we have observed an electron at point A and observed another electron at point B. We cannot say anything about what happened in the middle, let alone if we observed the same electron or not because electrons are indistinguishable from each other.
 
 >What is more real?
+
 So, **what is more real**? The **particle** or the **wave**? There isn't a unique answer. All depends by the question we are doing. And no matter how skilled is the physicist, there is never an absolute certainty about the answer he might have. 
 
 In the second part of this post, we will see in detail what all this means, starting from the famous **Schrodinger's cat**. So try not to miss it. Finally, if you liked this post, please leaves a comment or share it.

@@ -5,6 +5,18 @@ tagline: ...the time has come to talk of many things
 ---
 {% include JB/setup %}
 
+{% if site.posts.first.style %}
+  <link rel="stylesheet" href="/css/art-direction/{{ site.posts.first.style }}">
+{% elsif page.style %}
+  <link rel="stylesheet" href="/css/art-direction/{{ page.style }}">
+{% endif %}
+
+{% if site.posts.first.googlewebfonts %}
+  <link href='http://fonts.googleapis.com/css?family={{ site.posts.first.googlewebfonts }}'>
+{% elsif page.googlewebfonts %}
+  <link href='http://fonts.googleapis.com/css?family={{ page.googlewebfonts }}'>
+{% endif %}
+
 ## About the (damn) author 
 Hi, my name is Prisco. I make software. In this blog you’ll find articles about my passions: **Maths**, **Physics** and **Computer Science**. Hope you’ll enjoy it! 
 

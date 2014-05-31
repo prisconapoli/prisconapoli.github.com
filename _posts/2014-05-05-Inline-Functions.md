@@ -23,6 +23,7 @@ Below is reported a **rule of tumbs** for defining inline functions:
 ##Further Information
 
 [C++11](http://en.wikipedia.org/wiki/C%2B%2B11)
+
 [Google C++ Style Guide](http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml), Revision 3.274
 
 
