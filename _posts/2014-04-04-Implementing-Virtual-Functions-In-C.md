@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags: [virtual functions, c++, c,inheritance, polimorphism, object oriented design]
+tags: [virtual functions, c++, c, inheritance, polimorphism, object oriented design]
 ---
 {% include JB/setup %}
 
