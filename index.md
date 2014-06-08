@@ -18,17 +18,6 @@ tagline: ...the time has come to talk of many things
 {% endif %}
 
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Ads1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-8829897225279483"
-     data-ad-slot="2104974859"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
 ## About the (damn) author 
 Hi, my name is Prisco. I make software. In this blog you’ll find articles about my passions: **Maths**, **Physics** and **Computer Science**. Hope you’ll enjoy it! 
 
