@@ -5,7 +5,7 @@ tags: [Programmers' theoretical minimum, near, far, large, pointers]
 ---
 {% include JB/setup %}
 
-**Programmers’ theoretical minimum: do you never hear the auto keyword?**
+**Programmers’ theoretical minimum: near, far and huge pointers?**
 
 <!--more-->
 
