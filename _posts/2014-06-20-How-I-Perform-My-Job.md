@@ -5,7 +5,7 @@ tags: [zen, tao, programming]
 ---
 {% include JB/setup %}
 
-Seeking the simplest harmony between machine and ideas.
+**Seeking the simplest harmony between machine and ideas**
 
 <!--more-->
 
