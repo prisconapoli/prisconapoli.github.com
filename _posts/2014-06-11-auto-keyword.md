@@ -1,7 +1,7 @@
 ---
 layout: post
 category : misc
-tags: [Programmers' theoretical minimum, C++, auto, keyword]
+tags: [Programmers' theoretical minimum, near, far, large, pointers]
 ---
 {% include JB/setup %}
 
