@@ -12,12 +12,10 @@ title : prisconapoli.github.com
 #tagline: Site Tagline
 author :
   name : Prisco Napoli
-  url: 'http://prisconapoli.github.io'
   email : prisco.napoli@gmail.com
   github : prisconapoli
 #  twitter : username
 #  feedburner : feedname
-
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
