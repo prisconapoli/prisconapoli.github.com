@@ -46,6 +46,20 @@ If someone of you is curious to know more about myself and my experience, feel f
 
 So let's start... the time has come to talk of many things....
 
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8829897225279483";
+/* Ads1 */
+google_ad_slot = "2104974859";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
 ## Recent Posts
 
 Take a look at my **last posts**:
