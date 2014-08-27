@@ -1,15 +1,15 @@
 ---
 layout: post
 category : video
-tags: [TED, Sam Bearns, philosophy]
+tags: [TED, Sam Berns, philosophy]
 ---
 {% include JB/setup %}
 
-**My philosophy for a happy life: a moving speech by Sam Bears**
+**My philosophy for a happy life: a moving speech by Sam Berns**
 
 <!--more-->
 
-In the spirit of **ideas worth spreading**, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. This is a speech about the essence of the life made by **Sam Bears**.
+In the spirit of **ideas worth spreading**, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. This is a speech about the essence of the life made by **Sam Berns**.
 
 Sam was diagnosed with **Progeria**, a rare, rapid aging disease, at the age of 2. He passed few months ago at age of 17. 
 
