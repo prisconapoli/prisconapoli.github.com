@@ -37,7 +37,7 @@ Black boxes are surrounded by a general idea of opacity which makes them particu
 ![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/black-box.png)
 </div>
 
-#####Black Box structure, credits 'Inside The Black Box' by Rishi Narrang
+######Black Box structure, credits 'Inside The Black Box' by Rishi Narrang
 
 A quant use systematically an **alpha-seeking investment strategy** that has been specified on the basis of an exhaustive search. An alpha investment strategy tries to get returns regardless of the market direction.
 Some of the most used techniques are **pairs trade** and **statistical arbitrage**. They are both based on the same assumption: two similar financial instruments (e.g. stocks about IT companies which sell Cloud) behave similarly.
