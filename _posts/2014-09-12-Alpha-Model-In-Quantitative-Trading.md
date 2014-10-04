@@ -5,7 +5,7 @@ tags: [quantitative trading, alpha model, financial market, black box]
 ---
 {% include JB/setup %}
 
-**How quant traders expect to make profits .**
+**How quant traders expect to make profits.**
 
 <!--more-->
 
