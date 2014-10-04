@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lesson
+category : lessons
 tags: [quantitative trading, financial market, black box]
 ---
 {% include JB/setup %}

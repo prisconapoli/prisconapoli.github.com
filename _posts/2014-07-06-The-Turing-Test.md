@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lesson
+category : lessons
 tags: [Turing, Artificial Intelligence, Brain]
 ---
 {% include JB/setup %}
