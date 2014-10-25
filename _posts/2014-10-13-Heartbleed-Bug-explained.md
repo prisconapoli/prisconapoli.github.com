@@ -16,9 +16,10 @@ In jargon, this kind of vulnerability is classified as a **buffer over-read**, w
 Surfing in the Web I found a nice picture which explains in a very understandable way what are the effects of this bug.  
 
 <div style="text-align:center" markdown="1">
-![How the Hearthbleed works]({{ site.url }}/assets/images/heartbleed-explained/heartbleed-explained.jpg)
+![How the Heartbleed works]({{ site.url }}/assets/images/heartbleed-explained/heartbleed-explained.jpg)
 </div>
-#####How the Hearthbleed works, credits http://xkcd.com/1354
+
+#####How the Heartbleed bug works, credits http://xkcd.com/1354
 
 ##Further Information
 
