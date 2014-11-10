@@ -17,18 +17,6 @@ tagline: ...the time has come to talk of many things
   <link href='http://fonts.googleapis.com/css?family={{ page.googlewebfonts }}'>
 {% endif %}
 
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Ads1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-8829897225279483"
-     data-ad-slot="2104974859"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
 ## About the (damn) author 
 Hi, my name is Prisco. I make software. In this blog you’ll find articles about my passions: **Maths**, **Physics** and **Computer Science**. Hope you’ll enjoy it! 
 
@@ -45,19 +33,6 @@ Don't worry... I promise that I'll not bore you too much.  Anyway, in any case, 
 If someone of you is curious to know more about myself and my experience, feel free to contact me on [linkedin](http://ie.linkedin.com/in/prisconapoli/). 
 
 So let's start... the time has come to talk of many things....
-
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-8829897225279483";
-/* Ads1 */
-google_ad_slot = "2104974859";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
 
 
 ## Recent Posts
