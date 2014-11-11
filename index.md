@@ -17,17 +17,7 @@ tagline: ...the time has come to talk of many things
   <link href='http://fonts.googleapis.com/css?family={{ page.googlewebfonts }}'>
 {% endif %}
 
-
-<script type="text/javascript">
-  ( function() {
-    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"calltype":"async[2]","publisher":"prisconapoli","width":550,"height":250,"sid":"Chitika Default"};
-    var placement_id = window.CHITIKA.units.length;
-    window.CHITIKA.units.push(unit);
-    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-}());
-</script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+<script type='text/javascript' src='http://ads.qadservice.com/t?id=b29179b6-d61e-42a9-857e-816c753fc539&size=728x90'></script>
 
 
 ## About the (damn) author 
@@ -47,6 +37,19 @@ If someone of you is curious to know more about myself and my experience, feel f
 
 So let's start... the time has come to talk of many things....
 
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"prisconapoli","width":550,"height":250,"sid":"Chitika Default"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+
+<script type="text/javascript" >var qadserve_pid = "388de3ac-5a4e-46f4-b4f7-e7609400c46e";var qadserve_width = "728";var qadserve_height = "90";</script><script type="text/javascript"  src="http://mmrm.qadservice.com/qadserve_stayon.min.js"></script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script> 
 
 ## Recent Posts
 
