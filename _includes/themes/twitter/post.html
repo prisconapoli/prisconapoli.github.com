@@ -1,0 +1,116 @@
+<header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#top" class="navbar-brand scroll-top logo"><b>Prisco Napoli</b></a>
+                </div>
+                <!--/.navbar-header-->
+                <!<div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav  pull-right" id="mainNav">
+                        <li><a href="{{ BASE_PATH }}/" class="scroll-link">Home</a></li>
+                         {% for post in site.posts limit:1 %}
+<li><a href="{{ BASE_PATH }}{{ post.url }}" class="scroll-link">Blog</a></li>
+{% endfor %}
+                        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" class="scroll-link">Archive</a></li>
+                        <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}" class="scroll-link" >Categories</a></li>
+                        <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="scroll-link">Tags</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </header>
+<!--/.header-->
+
+<div id="#top"></div>
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+                    <h1>{{ page.title }} <br/>{% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+
+<div class="container sections-wrapper">
+  <div class="row">
+    <div class="primary col-md-8 col-sm-12 col-xs-12"> 
+      <section class="post section">
+        <div class="section-inner">
+          <div class="row-fluid post-full">
+            <div class="span12">
+              <div class="date">
+                <br> <span><b>{{ page.date | date_to_long_string }}</b></span>
+              </div>
+
+              <div class="content">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div><!--//section-inner-->
+      </section><!--//section-->
+
+      <section class="post section">
+        <div class="section-inner">
+              {% unless page.tags == empty %}
+              <ul class="tag_box inline">
+                <li><i class="icon-tags"></i></li>
+                {% assign tags_list = page.tags %}
+                {% include JB/tags_list %}
+              </ul>
+              {% endunless %}  
+              <hr>
+              <div class="pagination">
+                <ul>
+                  {% if page.previous %}
+                  <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+                  {% else %}
+                  <li class="prev disabled"><a>&larr; Previous</a></li>
+                  {% endif %}
+                  <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+                  {% if page.next %}
+                  <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+                  {% else %}
+                  <li class="next disabled"><a>Next &rarr;</a>
+                    {% endif %}
+                  </ul>
+                </div>
+                <hr>
+                {% include JB/comments %}
+              </div><!--//section-inner-->
+      </section><!--//section-->
+    </div><!--//secondary-->
+
+
+    <div class="secondary col-md-4 col-sm-12 col-xs-12">
+      <aside class="skills aside section">
+        <div class="section-inner">
+          <h2 class="heading">Other posts in {{ page.category }} </h2>
+          <div class="content">
+            {% for post in site.posts %}
+            {% if post.category == page.category %}
+            {% if post.title != page.title %}
+            <li>
+              <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+              <h6><i>{{ post.date | date_to_long_string }}</i></h6>
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% assign categories_list = nil %}
+          </div>              
+        </div><!--//content-->                  
+      </aside><!--//section-->
+     </div><!--//secondary-->  
+  </div><!--//row-->
+</div><!--//masonry-->
+

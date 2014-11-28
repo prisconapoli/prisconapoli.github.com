@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title> Prisco Napoli | Software Engineer | {{ page.title }}</title>
+  <meta name="author" content="{{ site.author.name }}">
+
+  <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Prisco Napoli | Software Engineer">
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+  <![endif]-->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="{{ ASSET_PATH }}/text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/da-slider.css" />
+    <!-- Owl Carousel Assets -->
+    <link href="{{ ASSET_PATH }}/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css" />
+    <!-- Font Awesome -->
+    <link href="{{ ASSET_PATH }}/font/css/font-awesome.min.css" rel="stylesheet">
+
+      <!-- 
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+
+
+      <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+
+      <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <link href="{{ ASSET_PATH }}/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+
+
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+      <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+      -->
+      <!-- atom & rss feed -->
+      <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+      <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+      <!-- Theme CSS -->  
+    </head>
+
+    <body>
+     <!-- ******GoogleAnalyticsObject****** --> 
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56615452-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+  </script>
+
+  {{ content }}
+
+
+  <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+  <hr>
+
+<!-- Javascript -->          
+    
+ <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+
+ <script src="{{ ASSET_PATH }}/js/modernizr-latest.js"></script>
+ <script src="{{ ASSET_PATH }}/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/bootstrap.min.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/jquery.isotope.min.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/jquery.nav.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/jquery.cslider.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/custom.js" type="text/javascript"></script>
+ <script src="{{ ASSET_PATH }}/js/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+
+    <!-- ******FOOTER****** --> 
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="https://plus.google.com/105302638507040399054"><i class="fa fa-google-plus"></i></a>
+                <a href="http://ie.linkedin.com/in/prisconapoli"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/prisconapoli/sourcecode.com"><i class="fa fa-github"></i></a>                  
+                <a href="http://stackoverflow.com/users/2558324/prisco-napoli"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+  
+        </div>
+
+    </footer>
+  
+  
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">&copy; {{ site.time | date: '%Y' }} Designed with <i class="fa fa-heart"></i> by <a href="http://ie.linkedin.com/in/prisconapoli" target="_blank">{{ site.author.name }}</a></div>
+            </div>
+            <!-- / .row -->
+        </div>
+    </section>
+
+    {% include JB/analytics %}
+  </body>
+  </html>
