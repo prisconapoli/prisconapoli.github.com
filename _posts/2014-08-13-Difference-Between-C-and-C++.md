@@ -2,7 +2,7 @@
 layout: post
 category : Development
 tags: [Programmers' theoretical minimum, c, c++]
-image : development/development..png
+image : difference_c_cpp/c_cpp.jpg
 tagline: sometimes the evil lives into details
 ---
 {% include JB/setup %}
