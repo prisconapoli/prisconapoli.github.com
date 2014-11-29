@@ -7,7 +7,7 @@ tagline: Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geni
 ---
 {% include JB/setup %}
 
-**45 advices, tools and best practices from the book *C++ Coding Standards***
+**46 advices, tools and best practices from the book *C++ Coding Standards***
 
 <!--more-->
 
