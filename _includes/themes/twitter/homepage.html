@@ -446,7 +446,7 @@
                         <div class="portfolio-items isotopeWrapper clearfix" id="3">
                             {% for category in site.categories %}
                             {% for posts in category %}
-                                {% for post in posts %}
+                              {% for post in posts %}
                                 {% if forloop.index < 4 %}
                                     {% if post.title %}
                              <article class="col-sm-4 isotopeItem {{ category[0] }}">
@@ -466,7 +466,7 @@
                                     </div>
                                      <div class="heading text-center">
                                     <a style="color:white;" href="{{ BASE_PATH }}{{ post.url }}"  alt="{{ post.title }}"> 
-                                    <b> {{ post.title }} - {{ post.category}} </b>
+                                    <b> {{ post.title }} </b>
 
                                     </a>
                                     </div>    
