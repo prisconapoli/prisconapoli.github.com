@@ -7,7 +7,7 @@ tagline: A mind which does not know accounting, is it a mind that has intelligen
 ---
 {% include JB/setup %}
 
-####Financial Technology
+####How financial systems work, how they came to be and how they evolved.
 
 <!--more-->
 
@@ -28,7 +28,6 @@ The main difference between a financial system and a traditional commercial syst
 
 Generally, products exchanged in a traditional commercial systems are things we eat, drink or consume as energy resources. Products exchanged in a financial system are more intangible and change over time, such as credit, property, contracts, bonds, stocks and shares.
 
-
 In Financial market, buyers and sellers make money betting on price movement and risk management.
 A financial exchange has several advantages compared to a commercial system:
 
@@ -41,10 +40,9 @@ The so called *handshake protocol* for trading was discussed in the 1688 essay b
 
 > A member of the Exchange opens his hand and another takes it, and thus sells a number of shares at a fixed price, which is confirmed by a second handshake. With a new handshake a further item is offered, and then there follows a bid. The hands redden from the blows.
 
-
 Communications between agents and brokers must not be ambiguous. The most important characteristics of such unambiguous peer-to-peer communication are:
 
-**Reliability**: There is an acknowledgment for each message between participants so that if a message is not acknowledged by the listener, the speaker communicates the message again
+**Reliability**: There is an acknowledgment for each message between participants so that if a message is not acknowledged by the listener, the speaker communicates the message again;
 
 **Error correction**: Any mistakes made in communication should be detectable and correct wherever possible.
 
