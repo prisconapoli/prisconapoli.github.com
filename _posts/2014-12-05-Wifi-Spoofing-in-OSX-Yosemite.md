@@ -88,7 +88,7 @@ EOF
 function getmac(){
     # first byte need to be always an even number
     first="0c:"
-    local new_mac=$prefix$(openssl rand -hex 5 | sed 's/\(..\)/\1:/g; s/.$//')
+    local new_mac=$first$(openssl rand -hex 5 | sed 's/\(..\)/\1:/g; s/.$//')
     echo $new_mac
 }
 
