@@ -86,8 +86,10 @@ EOF
 } 
 
 function getmac(){
-	local new_mac=$(openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//')
-	echo $new_mac
+    # first byte need to be always an even number
+    first="0c:"
+    local new_mac=$prefix$(openssl rand -hex 5 | sed 's/\(..\)/\1:/g; s/.$//')
+    echo $new_mac
 }
 
 if [ $# -gt 4 ]
