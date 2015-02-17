@@ -7,7 +7,7 @@ tagline: A mind which does not know accounting, is it a mind that has intelligen
 ---
 {% include JB/setup %}
 
-####How financial systems work, how they came to be and how they evolved.
+**How financial systems work, how they came to be and how they evolved.**
 
 <!--more-->
 
