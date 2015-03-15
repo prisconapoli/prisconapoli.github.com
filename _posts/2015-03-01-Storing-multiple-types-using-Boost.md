@@ -39,26 +39,24 @@ int main() {
 }
 {% endhighlight %}
 
-To get a value from a boost::any variable, just use **boost::any_cast<T>**() with one of the following approaches:
+To get a value from a boost::any variable, just use **boost::any_cast<**T**>**() with one of the following approaches:
 
 {% highlight cpp %}
-    
-    boost::any val(std::string("value"));
-    
-    //#1: If actual value in variable is not a std::string, it throws a boost::bad_any_cast exception
-    std::string s1 = boost::any_cast<std::string>(val);
-    
-    //#2: If actual value in variable is not a std::string, the return value is NULL pointer
-    std::string* s2 = boost::any_cast<std::string>(&val);
+boost::any val(std::string("value"));
 
+//If actual value in variable is not a std::string, it throws a boost::bad_any_cast exception
+std::string s1 = boost::any_cast<std::string>(val);
+
+//If actual value in variable is not a std::string, the return value is NULL pointer
+std::string* s2 = boost::any_cast<std::string>(&val);
 {% endhighlight %}
 
-**Boost.Any** is based on **type erasure** technique. On assignment of some variable of type T, **Boost.Any** constructs a type (e.g. **holder<T>**) to store a value of the specified type **T**, and is derived from some internal base-type placeholder.
+**Boost.Any** is based on **type erasure** technique. On assignment of some variable of type T, **Boost.Any** constructs a type (e.g. **holder<**T**>**) to store a value of the specified type **T**, and is derived from some internal base-type placeholder.
 
-The placeholder has virtual functions for getting *std::type_info* of a stored type and for cloning a stored type. When *any_cast<T>()* is used, **boost::any** checks that *std::type_info* of a stored value is equal to *typeid(T)* (the overloaded placeholder's function is used for getting *std::type_info*).
+The placeholder has virtual functions for getting *std::type_info* of a stored type and for cloning a stored type. When **any_cast<**T**>()** is used, *boost::any* checks that *std::type_info* of a stored value is equal to *typeid(T)* (the overloaded placeholder's function is used for getting *std::type_info*).
 
-Unfortunately, **boost::any** requires dynamic memory allocation in copy constructor and copy assignment operators and cannot be used with **runtime type information (RTTI)** disabled.
-If you are keen on performance, see the boost::variant which has not this limitations.
+Unfortunately, *boost::any* requires dynamic memory allocation in copy constructor and copy assignment operators and cannot be used with **runtime type information (RTTI)** disabled.
+If you are keen on performance, see the [boost::variant ]({% post_url 2015-03-02-Another-Way-To-Store-multiple-types-using-Boost %}) which has not these limitations.
 
 ##Further Information
 
