@@ -57,7 +57,7 @@ To get a value from a boost::any variable, just use **boost::any_cast<T>**() wit
 
 The placeholder has virtual functions for getting *std::type_info* of a stored type and for cloning a stored type. When *any_cast<T>()* is used, **boost::any** checks that *std::type_info* of a stored value is equal to *typeid(T)* (the overloaded placeholder's function is used for getting *std::type_info*).
 
-Unfortunately, Boost::Any uses dynamic memory allocation in copy constructor and copy assignment operators. Moreover, it cannot be used with **runtime type information (RTTI)** disabled.
+Unfortunately, **boost::any** requires dynamic memory allocation in copy constructor and copy assignment operators and cannot be used with **runtime type information (RTTI)** disabled.
 If you are keen on performance, see the boost::variant which has not this limitations.
 
 ##Further Information
