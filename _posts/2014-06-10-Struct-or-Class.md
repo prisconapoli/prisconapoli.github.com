@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [Programmers' theoretical minimum, C++, struct, class]
+tags: [Programmers' theoretical minimum, c++, struct, class]
 image : development/development.png
 ---
 {% include JB/setup %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [Programmers' theoretical minimum, C++, main]
+tags: [Programmers' theoretical minimum, c++, main]
 ---
 {% include JB/setup %}
 

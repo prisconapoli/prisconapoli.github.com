@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [Programmers' theoretical minimum, C++, class, empty object]
+tags: [Programmers' theoretical minimum, c++, class, empty object]
 image : development/development.png
 tagline: Empty objects don't exist.
 ---
