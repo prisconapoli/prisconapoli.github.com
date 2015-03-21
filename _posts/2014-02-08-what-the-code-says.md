@@ -63,7 +63,7 @@ Let me ask you a question: *How many Foo objects have been created?*
 
 The answer is **3**. Below the explaination:
 
-1. a **Foo** object is created inside the createVec() function
+1. a **Foo** object is created inside the getFoo() function
 2. a temporary object of type **Foo** is created to store the object returned by *getFoo()*
 3. the third object is simple the local variable **vec** 
 
