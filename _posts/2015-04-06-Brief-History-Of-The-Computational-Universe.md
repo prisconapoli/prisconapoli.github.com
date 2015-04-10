@@ -2,7 +2,7 @@
 layout: post
 category : Physics
 tags: [quantum physics, computational Universe]
-image : post_quantum_part/tartle.png
+image : post_quantum_part/tartle.jpg
 tagline: But it’s turtles all the way down!
 ---
 {% include JB/setup %}
