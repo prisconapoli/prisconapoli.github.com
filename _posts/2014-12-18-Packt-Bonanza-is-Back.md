@@ -12,7 +12,7 @@ image: packt/5DollarSmall.png
 
 
 <div style="text-align:center" markdown="1">
-![Packt 10 years of effective learning ]({{ site.url }}/assets/images/packt/5Dollar.png)
+![Packt 10 years of effective learning ]({{ site.url }}/assets/images/packt/5Dollar.png "Packt")
 </div>
 
 Following the success of last year’s festive offer, **Packt Publishing** will be celebrating the holiday season with an **even bigger $5 offer**.

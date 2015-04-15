@@ -21,7 +21,7 @@ This post is focused on the **alpha model**,  the first component of a quant sys
 Alpha strategies are designed to determine the **composition and quantity of the portfolio**. Indeed, the output from alpha model is either a **return forecast** or **direction forecast**.
 
 <div style="text-align:center" markdown="1">
-![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/alpha-model.png)
+![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/alpha-model.png "Black Box")
 </div>
 
 ######Black Box structure, credits 'Inside The Black Box' by Rishi Narrang
@@ -50,7 +50,7 @@ Basically there are two options:
 - **price continues to move in the same direction**. It is called **Trend Following** or **Momentum**. These strategies are based on the idea that the market often moves *for a long time* in a certain direction, and it is possible to identify and ride this direction to make gains. This is what is called a *trend*. In Economics, **a trend means that there is a widely consensus among the investors**. Some people, however, argue that trends can born thank to the **Theory of the craziest**.  This theory says **because of people believe in the trend, they begin to buy instruments that have a growing price and to sell all instruments that are showing a decreasing price. This behavior implicitly creates a trend but is a sort of false positive*. Of course, much depends on the ability of traders to look at the significant trends and discard false positives. A very famous Trend Following technique is called **Moving Average Crossover**. It consists in comparing two indexes: a short term (50 day) and long term (200 day) index. The golden rule is quite simple: *sell if the short term index is below the long term index, buy if it is upper*.
 
 <div style="text-align:center" markdown="1">
-![Moving Average Crossovers]({{ site.url }}/assets/images/quantitative-trading/MASimple50200SPY.gif)
+![Moving Average Crossovers]({{ site.url }}/assets/images/quantitative-trading/MASimple50200SPY.gif "Moving Average Crossovers")
 </div>
 
 ######Moving Average Crossovers (credits http://www.onlinetradingconcepts.com)
@@ -59,7 +59,7 @@ Basically there are two options:
 
 
 <div style="text-align:center" markdown="1">
-![Statistical arbitrage]({{ site.url }}/assets/images/quantitative-trading/PEP_Chart_6-19-13_fw.png)
+![Statistical arbitrage]({{ site.url }}/assets/images/quantitative-trading/PEP_Chart_6-19-13_fw.png "Statistical arbitrage")
 </div>
 
 ######Statistical arbitrage (credits http://www.nasdaq.com)

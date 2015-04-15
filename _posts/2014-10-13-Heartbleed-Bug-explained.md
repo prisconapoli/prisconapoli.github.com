@@ -19,7 +19,7 @@ Surfing in the Web I found a nice picture which explains in a very understandabl
 <!--summary-->
 
 <div style="text-align:center" markdown="1">
-![How the Heartbleed works]({{ site.url }}/assets/images/heartbleed-explained/heartbleed-explained.jpg)
+![How the Heartbleed works]({{ site.url }}/assets/images/heartbleed-explained/heartbleed-explained.jpg "Heartbleed")
 </div>
 
 #####How the Heartbleed bug works, credits http://xkcd.com/1354

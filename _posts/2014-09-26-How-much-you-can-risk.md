@@ -18,7 +18,7 @@ Is necessary to keep in mind that exposure is the thing from which a quantitativ
 
 <!--summary-->
 <div style="text-align:center" markdown="1">
-![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/risk-model.png)
+![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/risk-model.png "Risk Model")
 </div>
 
 ######Black Box structure, credits 'Inside The Black Box' by Rishi Narrang

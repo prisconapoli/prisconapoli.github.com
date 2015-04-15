@@ -21,7 +21,7 @@ Costs are generally due to commissions and fees paid to brokers, exchanges or re
 <!--summary-->
 
 <div style="text-align:center" markdown="1">
-![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/cost-model.png)
+![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/cost-model.png "Cost Model")
 </div>
 
 ######Black Box structure, credits 'Inside The Black Box' by Rishi Narrang

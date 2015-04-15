@@ -3,6 +3,7 @@ layout: post
 category : Misc
 tags: [professionalism, software engineering]
 tagline: Be professional.
+image : zen_programming/changelog.jpg
 ---
 {% include JB/setup %}
 

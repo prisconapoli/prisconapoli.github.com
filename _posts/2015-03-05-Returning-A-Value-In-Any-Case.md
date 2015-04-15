@@ -2,7 +2,7 @@
 layout: post
 category : Development
 tags: [c++, 'boost::optional', boost]
-image : boost/boost_logo.png
+image : boost/cpp_logo.png
 tagline: One of the most highly regarded and expertly designed C++ library projects in the world - H.Sutter and A.Alexandrescu, C++ Coding Standards
 
 

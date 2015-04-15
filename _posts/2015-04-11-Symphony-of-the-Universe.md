@@ -19,7 +19,7 @@ The process by which the environment destroys the wave nature of objects through
 A good example of quantum bit is the nuclear spin; spin up is associated with *0* and spin down to *1*. The wave that corresponds to 0 is represented by the symbol **|0〉**, while the other with **|1〉**; the bracket symbol **|>** has a mathematics meaning, and serves to indicate that everything that lies inside this symbol is a quantum object (e.g. a wave). Waves can be combined: the combination is called superposition.
 
 <div style="text-align:center" markdown="1">
-![]({{ site.url }}/assets/images/post_quantum_part/qubit.jpg)
+![]({{ site.url }}/assets/images/post_quantum_part/qubit.jpg "Qubits")
 </div>
 
 ######Qubits(Credit: AWS Official Blog, https://aws.amazon.com/blogs/aws/)
@@ -46,7 +46,7 @@ Einstein was confused about quantum mechanics. As is well known in history, he n
 An atom consists of a nucleus (protons + neutrons) around which electrons orbit. When an atom is in its normal state, called **ground state**, the electrons are accumulated around the nucleus as much as possible. The core itself is kept together by the **strong nuclear force**. Quantum mechanics explains atom's stability. Indeed, the classical physics, incorrectly predicted the collapse of electrons on the nucleus and the annihilation of the atom in an emission of light.
 
 <div style="text-align:center" markdown="1">
-![]({{ site.url }}/assets/images/post_quantum_part/atom.jpg)
+![]({{ site.url }}/assets/images/post_quantum_part/atom.jpg "Atom")
 </div>
 
 ######Atomic Structure (Credit: http://www.sophia.org)
@@ -82,7 +82,7 @@ To exploit the quantum parallelism, it is necessary to wait until all the waves 
 A quantum computer can explore **all possible solutions to a difficult problem at the same time**. For example, using a traditional computer is not thinkable to address the problem of [factorization](http://en.wikipedia.org/wiki/Factorization). The apparent difficulty of factoring large numbers is the basis of a powerful method to protect information, the [Public-key cryptography](http://en.wikipedia.org/wiki/Public-key_cryptography).
 
 <div style="text-align:center" markdown="1">
-![]({{ site.url }}/assets/images/post_quantum_part/math.gif)
+![]({{ site.url }}/assets/images/post_quantum_part/math.gif "Factorization")
 </div>
 
 ######Prime Factorization (Credit: http://www.coolmath.com)

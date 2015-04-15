@@ -12,7 +12,7 @@ tagline: The U.S. stock market now trades inside black boxes, in heavily guarded
 <!--more-->
 
 <div style="text-align:center" markdown="1">
-![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/nasdaq-big-board.jpeg)
+![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/nasdaq-big-board.jpeg "Black Box")
 </div>
 
 Spectacular successes and failures, high volumes of orders sent in fractions of seconds, huge quantity of money raised in few hours. There is no doubt that quantitative trading today casts a huge shadow in the financial market. 
@@ -36,7 +36,7 @@ What makes them so famous is the fact that they are highly sophisticated. Their 
 Black boxes are surrounded by a general idea of opacity which makes them particularly hard to understand for the people which is not involved in quantitative trading. In particular, there are two adjectives that are massively used in the literature to describe a black box: complex and secret. 
 
 <div style="text-align:center" markdown="1">
-![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/black-box.png)
+![Black Box structure]({{ site.url }}/assets/images/quantitative-trading/black-box.png "Black Box")
 </div>
 
 ######Black Box structure, credits 'Inside The Black Box' by Rishi Narrang

@@ -470,7 +470,7 @@
                         <div class="portfolio-items isotopeWrapper clearfix" id="3">
                             {% assign sor = site.posts | group_by:"category" %}
                             {% for group in sor %}
-                            {% for post in group.items| limit:3 %}
+                            {% for post in group.items| limit:5 %}
                             {% if post.title %}
                              <article class="col-sm-4 isotopeItem {{ group.name|downcase }}">
                                 <div class="portfolio-item">

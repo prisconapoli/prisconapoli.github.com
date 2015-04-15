@@ -31,7 +31,7 @@ char a[100] = "Mickey Mouse";
 Both declarations indicate that *a* is an array, namely a memory location where the characters in the array can be found. The compiler **doesn't need to know how long the array is in total, as it merely generates address offsets from the start**. To get an element from the array, you simply add the offset to the base address.
 
 <div style="text-align:center" markdown="1">
-![]({{ site.url }}/assets/images/post_array_pointers/2.jpg)
+![]({{ site.url }}/assets/images/post_array_pointers/2.jpg "Pointers")
 </div>
 
 In contrast, the current value of a pointer must be retrieved at runtime before it can be dereferenced (made part of a further look-up).
