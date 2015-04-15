@@ -3,8 +3,7 @@ layout: post
 category : Physics
 tags: [quantum physics, computational Universe, many-worlds, entropy]
 image : post_quantum_part/digital_quant.jpg
-tagline: Physical reality does not require that we be pleased with its mechanism- 
-― Kevin Michel, Moving Through Parallel Worlds To Achieve Your Dreams
+tagline: Physical reality does not require that we be pleased with its mechanism ― Kevin Michel, Moving Through Parallel Worlds To Achieve Your Dreams
 ---
 {% include JB/setup %}
 
