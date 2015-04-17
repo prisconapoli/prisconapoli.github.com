@@ -220,13 +220,13 @@ do shell script "script_path" with administrator privileges user name "username"
 After the field customization (script_path, username and password), save the script as **yospoof.app** or any other name you like.
 
 <div style="text-align:center" markdown="1">
-![Login Items]({{ site.url }}/assets/images/macspoof/automator.png)
+![Login Items]({{ site.url }}/assets/images/macspoof/automator.jpg "Automator")
 </div>
 
 Then open **Control Panel** and add the app in **Login Items**:
 
 <div style="text-align:center" markdown="1">
-![Automator]({{ site.url }}/assets/images/macspoof/yospoof.png)
+![Automator]({{ site.url }}/assets/images/macspoof/yospoof.jpg "Yospoof")
 </div>
 
 
