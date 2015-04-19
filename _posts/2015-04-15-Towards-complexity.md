@@ -19,7 +19,7 @@ Nowadays things are hugely different: think all the planets, stars, galaxies and
 
 
 <div style="text-align:center" markdown="1">
-![Monkey typing]({{ site.url }}/assets/images/post_quantum_part/monkey-typing.jpg "Monkey typing")
+![Monkey typing]({{ site.url }}/assets/images/post_quantum_part/Monkey-typing.jpg "Monkey typing")
 </div>
 
  
