@@ -22,13 +22,13 @@
 
 usage() {
 cat << EOF
-Usage:\n$0 [-m <mac-address>]
+Usage:\n$0 [-i <wifi-interface>] [-m <mac-address>]
 
 This script must be run with super-user privileges.
 
 OPTIONS:
    -h      Show this message
-   -i      Interface name (default is en0)
+   -i      Wifi interface name (default is en0)
    -m      MAC Address. If empty, a random address is used
    -v      Verbose
 EOF
@@ -45,10 +45,10 @@ function getmac(){
     echo $new_mac
 }
 
-if [ $# -gt 4 ]
+if [ $# -gt 5 ]
 then
-     usage
-     exit 1
+    usage
+    exit 1
 fi
 
 INTERFACE="en0"
@@ -62,7 +62,7 @@ DetectHW="networksetup -detectnewhardware"
 readMac="ifconfig $INTERFACE | grep ether| cut -d ' ' -f 2"
 ON="networksetup -setairportpower $INTERFACE on"
 OFF="networksetup -setairportpower $INTERFACE off"
-while getopts “i:m:v” OPTION
+while getopts “hi:m:v” OPTION
 do
     case $OPTION in
          h)
