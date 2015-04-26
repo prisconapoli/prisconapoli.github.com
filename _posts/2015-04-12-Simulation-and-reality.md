@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Physics
-tags: [quantum physics, computational Universe, many-worlds, entropy]
+tags: [quantum physics, computational universe, thermodynamics, entropy, information]
 image : post_quantum_part/digital_quant.jpg
 tagline: Physical reality does not require that we be pleased with its mechanism ― Kevin Michel, Moving Through Parallel Worlds To Achieve Your Dreams
 ---
@@ -17,6 +17,13 @@ How a digital computer differ from an analog computer?
 
 A classic analog computer manipulates contiguous variables, like a voltage. This is because of classic variables (e.g. velocity, volume or pressure) are contiguous, so to simulate them the computer has to be contiguous itself. A digital computer comes with discrete quantities, as the bits are discrete. A digital computer can handle continuous variables, but only after a discretization process.
 In a quantum computer, however, there is no distinction between analogy and digital computation. Quanta are discrete by definition, and their status can be directly mapped in the state of qubits without error of approximation. But the qubits are also continuous, because of their wave nature; their states can be an overlap continues. It follows that in a quantum computer, this distinction has no more reason to exist; **no longer makes sense to speak of analog or digital**.
+
+
+<div style="text-align:center" markdown="1">
+![]({{ site.url }}/assets/images/post_quantum_part/Scientific-American-Cover-Are-you-a-Hologram.jpg "Universe")
+</div>
+
+######Are you a Hologram? (Credit: Scientific American)
 
 ##Simulation and reality
 The question on the difference between simulation and reality has ancient origins.
@@ -46,10 +53,17 @@ As first thing, recall that energy limits the speed. The amount of energy in the
 
 Consider that when we affirm *let's calculate the computational capacity of the Universe*, what we are really doing is calculating the computational capacity of the Universe in the horizon, that is, when the Universe was born (about 14 billion years ago). Beyond the horizon, we can only guess what happened or will happen. As time passes, the horizon of the Universe is expanding at a rate that is **three times the speed of light**.
 
-Looking through a telescope we look into the past. As the horizon expands, more and more objects come in the visible range, and the amount of energy available for computation within the horizon increases. The horizon is **42 billion** light years away.
+<div style="text-align:center" markdown="1">
+![Timeline of the Universe]({{ site.url }}/assets/images/post_quantum_part/timeline_small.jpg "Universe")
+</div>
 
-In the Universe there are about 10 to the 71 joules of energy. A computer made by all the energy of the Universe can make 10 to the 105 operations per second (about 100 000 googol).
-The cosmological computer can perform 10 to the 122 operations per second on 10 to the 92 bits.
+######Timeline of the Universe (Credit: background.uchicago.edu)
+
+
+Looking through a telescope we look in the past. As the horizon expands, more and more objects come in the visible range, and the amount of energy available for computation within the horizon increases. The horizon is **42 billion** light years away.
+
+In the Universe there are about **10<sup>71</sup> Joules** of energy. A computer made by all the energy of the Universe can make **10<sup>105</sup> operations per second**, more than 100 000 googol!.
+The cosmological computer can perform **10<sup>122</sup>** operations per second on **10<sup>92</sup>** bits.
 
 The laws of physics dictate a fundamental limit on the speed of computation and the number of bits available. The computational speed is limited by the energy available, and the number of bits is limited by this energy and the size of the system that performs the computation.
 The computational power grows with time, because the horizon is expanding very quickly. Modern physics is based on the mechanistic model. In this paradigm, the main quantity is the energy. Think about the world not only as a machine but as a machine that processes information. In this paradigm, there are two primary quantities: **energy** and **information**.

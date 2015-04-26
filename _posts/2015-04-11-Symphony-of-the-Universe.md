@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Physics
-tags: [quantum physics, computational Universe, Uncertainty principle, atom]
+tags: [quantum physics, computational universe, Uncertainty principle, thermodynamics, entropy, information]
 image : post_quantum_part/sym.jpg
 tagline: We have to remember that what we observe is not nature herself, but nature exposed to our method of questioning - Werner Heisenberg
 ---

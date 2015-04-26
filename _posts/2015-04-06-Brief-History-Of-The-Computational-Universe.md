@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Physics
-tags: [quantum physics, computational Universe]
+tags: [quantum physics, computational universe, thermodynamics, entropy, information]
 image : post_quantum_part/tartle.jpg
 tagline: But it’s turtles all the way down!
 ---

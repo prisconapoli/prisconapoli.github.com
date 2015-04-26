@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Physics
-tags: [quantum physics, computational Universe, many-worlds, complexity]
+tags: [quantum physics, computational universe, many-worlds, complexity, thermodynamics, entropy, information]
 image : post_quantum_part/complexity.jpg
 tagline: Life is really simple, but we insist on making it complicated - Confucius
 ---

@@ -37,7 +37,13 @@ Take a look at the articles [What is real]({% post_url 2014-03-01-What-is-real %
 
 
 A [quantum computer](http://en.wikipedia.org/wiki/Quantum_computing) works using the laws of Quantum Mechanics. It is a device that incorporates the same abilities of information processing attributed to atoms, molecules or chemical elements.
-Quantum computers exploit the weirdness of Quantum Mechanics to perform tasks that are very complex for classical computers. Since a **quantum bit**, or **qubit** is able to record both *0* or *1* at the same time, while a bit in a *classic* cmputer can record *only* 0 or 1, a quantum computer can **perform millions of operations simultaneously**. For a quantum computer does not make sense the classic distinction between digital or analog computer, as in classic computers. It is both digital and analog in the same time.
+Quantum computers exploit the weirdness of Quantum Mechanics to perform tasks that are very complex for classical computers. Since a **quantum bit**, or **qubit** is able to record both *0* or *1* at the same time, while a bit in a *classical* computer can record *only* 0 or 1, a quantum computer can **perform millions of operations simultaneously**. For a quantum computer does not make sense the classical distinction between digital or analog computer, as in classical computers. It is both digital and analog in the same time.
+
+<div style="text-align:center" markdown="1">
+![Qubits explained]({{ site.url }}/assets/images/post_quantum_part/qbit.jpg "Qubits explained")
+</div>
+
+######Qubits explained(Credit: https://universe-review.ca
 
 A quantum computer is the democracy of the information, since each element (atom, electron or photon) participates in a *fair manner to the storage and processing of information*. 
 Historically, have been [Paul Benioff](https://www.phy.anl.gov/theory/staff/Benioff_P.html), [Richard Feynman](http://en.wikipedia.org/wiki/Richard_Feynman) and [David Deutsch](http://en.wikipedia.org/wiki/David_Deutsch) whom started to talk about Quantum Computers in the early '80s. A quantum computer was a total abstraction, nobody had the slightest idea on how to build them.

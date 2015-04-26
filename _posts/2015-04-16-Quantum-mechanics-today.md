@@ -114,7 +114,7 @@ In Turing formulation, Godel's self-referentiality predicates are translated int
 
 
 <div style="text-align:center" markdown="1">
-![Ouroboros]({{ site.url }}/assets/images/post_quantum_part/Ouroboros.jpg "Ouroboros")
+![Ouroboros]({{ site.url }}/assets/images/post_quantum_part/ouroboros.jpg "Ouroboros")
 </div>
 
 ######The Ouroboros, a dragon that continually consumes itself, is used as a symbol for self-reference (Credit: Wikipedia.org)
