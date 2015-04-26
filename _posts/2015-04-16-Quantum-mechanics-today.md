@@ -3,7 +3,7 @@ layout: post
 category : Physics
 tags: [quantum physics, computational universe, thermodynamics, entropy, information]
 image : post_quantum_part/qm.jpg
-tagline: Quantum computation is... a distinctively new way of harnessing nature. - David Deutsch
+tagline: Quantum computation is... a distinctively new way of harnessing nature... - David Deutsch
 ---
 {% include JB/setup %}
 
