@@ -11,11 +11,11 @@ tagline: Who in the world am I? Ah, that's the great puzzle. ― Lewis Carroll, 
 
 <!--more-->
 
-I love spend part of my free time writing for my blog and reading a book. During the weekend, I like do this in a quite place, drinking my favourite coffee and tasting tarts or cakes.
+I love spending part of my free time writing for my blog and reading a book. During the weekend, I like do this in a quite place, drinking my favourite coffee and tasting tarts or cakes.
 
-Few weeks ago I was studying in a coffee shop and everything seemed fine. The place was pretty nice and quite, the coffee amazing. Except one thing: the use of wifi connectivity was time limited. Every 25 minutes the connection dropped down: to continue to surf the web there were two options: compile a registration form provide all your data, or spoof the airport MAC address.
+Few weeks ago I was studying in a coffee shop and everything seemed fine. The place was pretty nice and quite, the coffee amazing. Except one thing: the use of wifi connectivity was time limited. Every 25 minutes wifi connection dropped down: to continue to surf the web there were two options: compile a registration form providing all your personal details, or spoof the airport MAC address.
 
-Spoof a MAC address is really easy in Mac OSX and in all Unix/Linux based systems. However, running the same commands several times per day can get everyone bored in short time. So I decided to write a little script for spoofing the wifi interface on OSX Yosemite and make all the process automatic and invisible to the user. The script is very easy easy and it is fundamentally based on the ifconfig command. 
+Spoof a MAC address is really easy in Mac OSX and in all Unix/Linux based systems. However, running the same commands several times per day can get everyone bored in short time. So I decided to write a little script for spoofing the wifi interface in OSX Yosemite and make all the process automatic and invisible to the user. The script is very easy and it is fundamentally based on the ifconfig command. 
 
 MAC spoofing entails changing a computer's identity. Technically speaking, it is a technique for masking the MAC address of the network interface. Indeed, each network interface is uniquely identified by a factory-assigned hard-coded address called Media Access Control (MAC). This address cannot be changed. However, there are several tools for Windows or Unix based systems, which can make the operating system believe that the NIC has the MAC address of a user's choosing.
 
