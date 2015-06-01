@@ -245,6 +245,27 @@ Then open **Control Panel** and add the app in **Login Items**:
 </div>
 
 
+##Avoid to store password in plaintext
+As noted by Rudy Baum in his comment, Automator has a weak. it stores the whole script as plaintext. In some situations, store your system password could be a serious security risk.
+To address this further complication, there are 3 options you can follow:
+
+**1.**Don't save at all the password in the script. Just use the script below
+{% highlight bash %}
+on run {input, parameters}
+    do shell script ("sudo /Users/prisco napoli/spoof.sh") ¬
+        with administrator privileges
+    return input
+end run
+{% endhighlight %}
+In this way you'll be prompted for a password each time.
+
+**2.**If you are the only user on your mac and you're using FileVault encryption, restrict access permission of spoof.app as much as possible. ie with chmod:
+{% highlight bash %}
+sudo chmod -R 700 yospoof.app
+{% endhighlight %}
+In this way you're just protecting yourself from bad guys'eyes that could look in the script and find root password.
+
+**3.**Use a specific tool, ie except
 
 ##Further Information
 [MAC spoofing](http://en.wikipedia.org/wiki/MAC_spoofing), Wikipedia.org
