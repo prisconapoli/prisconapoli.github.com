@@ -11,7 +11,7 @@ tagline: A well-written program is its own Heaven; a poorly-written program is i
 **Don't Panic. It's just a full function template specialization**
 <!--more-->
 
-I'd like to start this new post with a little puzzle. What is the ouput of the code below?
+I'd like to start this new post with a little puzzle. What is the ouput of the program below?
 
 {% highlight cpp %}
 #include <iostream>
@@ -37,7 +37,7 @@ int main()
 }
 {% endhighlight %}
 
-If your answer is **"c"**, well you're rigth. Now, let me to reorder a bit the code.  Again, what is the ouput? 
+If your answer is **"c"**, well you're rigth. Now, let me reorder a little bit the code.  Again, what is the ouput? 
 
 {% highlight cpp %}
 #include <iostream>
@@ -66,7 +66,7 @@ int main()
 If you answered **"c"** again, will, I regret to inform you that is wrong. The correct answer is **"b"**. What the hell! Why? Perhaps the compiler has a bug? Well, don't worry. The compiler is working fine. However, to figure out **why the correct answer is *"b"***, I need to give you a brief overview on templates in C++ and overloading rules.
 
 ###Templates
-C++ is great. I love it. I love it more that any others programming language I know (actually I am in a strong relationship with other 4 programming languages, and I had more than 20 lovers in my life as software engineer). In my opinion, C++ is the programming language, among few ones, that pushed to think as a software architect and as an ultra skilled developer equally.
+C++ is great. I love it. I love it more that any others programming language I know (actually I am in a strong relationship with other 4 programming languages, and I had more than 20 lovers in my life as software engineer). In my opinion, C++ is the programming language, among fews, that push to think as a software architect and as an ultra skilled developer equally.
 To write high quality C++ software, think at different level of abstractions in the same time is fundamental. From assembly to metaprogramming, from pipeline architecture to multithreading, from pointers to memory allocation strategies. Working with C++ is awesome and amusing.
 
 One of the most impressive features you can find using C++ are the so called templates. In particular, there are *class templates* and *function templates*, depending if we use them with classes or functions. Class templates and function templates don't work in the same way. For classes, you can have both partial specialization and full specialization, while for functions only full specialization is permitted (partial specialization is forbidden).
@@ -109,7 +109,7 @@ void func(int, double);
 
 {% endhighlight %}
 
-Now, let's give a look on the overloading rules to see which function get called in different situations. At high level, these rules are summarised below:
+Now, let's give a quick look on the overloading rules to see which function get called in different situations. At high level, these rules are summarised below:
 
 1- Plain old function, or simply non nontemplate functions, are first-class citizens. If both a nontemplate function and a function template match the parameter types,  the former will be selected. A plain old function has priority over all the other functions template.
 
