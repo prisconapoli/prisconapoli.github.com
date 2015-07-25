@@ -393,7 +393,7 @@ bool Singleton<T>::destroyed = false;
 The **Phoenix Singleton** solves some of the problems but has the disadvantage of altering the lifetime of a singleton. In particular, if the singleton handle a state, the situation may be complicated because is necessary preserve the state. This longevity problem is not limited to singletons but is much more general.
 
 
-#Thread safe
+#Multi-Threading
 A successful singleton implementation must be thread safe. The most common approaches are the use of a **mutex lock** and the **double-checked locking** pattern. Class Lock can handle mutex. The mutex is locked in Lock's ctor and unlocked in Lock's dtor. While mutex_ is locked, other threads cannot lock the same mutex and are forced to wait. 
 
 {% highlight cpp %}
