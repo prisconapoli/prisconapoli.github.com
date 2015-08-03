@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [c++,  c, template, metaprogramming]
+tags: [c++,  singleton, design-pattern, template, metaprogramming]
 image : zen_programming/singleton.jpg
 tagline: There are only patterns, patterns on top of patterns, patterns that affect other patterns. Patterns hidden by patterns. Patterns within patterns. -  Chuck Palahniuk
 
