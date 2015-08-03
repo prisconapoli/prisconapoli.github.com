@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [disruptor, high-performance, lock-free, concurrency, contention ]
+tags: [disruptor, high performance, lock free, concurrency, contention]
 image : concurrency/disruptor_small.jpg
 tagline: The way the processor industry is going, is to add more and more cores, but nobody knows how to program those things. I mean, two, yeah; four, not really; eight, forget it. - Steve Jobs.
 
