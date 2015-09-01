@@ -310,12 +310,12 @@ In **Part 2**, I'm going to dive in the C++ memory model and provide some exampl
 
 [Memory model for multithreaded C++: Issues](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1777.pdf) by A.Alexandrescu et al.
 
-[Memory Ordering in Modern Microprocessors, Part I](http://www.linuxjournal.com/article/8211)
+[Memory Ordering in Modern Microprocessors, Part I](http://www.linuxjournal.com/article/8211), by Paul E. McKenney, Linux Journal
 
-[Memory Ordering in Modern Microprocessors, Part II](http://www.linuxjournal.com/article/8212)
+[Memory Ordering in Modern Microprocessors, Part II](http://www.linuxjournal.com/article/8212), by Paul E. McKenney, Linux Journal
 
-[Who ordered memory fences on an x86?](http://bartoszmilewski.com/2008/11/05/who-ordered-memory-fences-on-an-x86/)
+[Who ordered memory fences on an x86?](http://bartoszmilewski.com/2008/11/05/who-ordered-memory-fences-on-an-x86), by Bartosz Milewski, Bartosz Milewski's Programming Cafe
 
-[Lock-Free Algorithms For Ultimate Performance](http://www.infoq.com/presentations/Lock-Free-Algorithms)
+[Lock-Free Algorithms For Ultimate Performance](http://www.infoq.com/presentations/Lock-Free-Algorithms), by Martin Thompson 
 
 [Software and the Concurrency Revolution](http://queue.acm.org/detail.cfm?id=1095421), by H. Sutter  and J. Larus
