@@ -33,7 +33,7 @@ void func<>(int *) {
 int main()
 {
     int* i;
-    f(i);
+    func(i);
 }
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ void func(T*) {
 int main()
 {
     int* i;
-    f(i);
+    func(i);
 }
 {% endhighlight %}
 
