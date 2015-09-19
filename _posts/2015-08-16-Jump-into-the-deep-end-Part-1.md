@@ -8,7 +8,7 @@ tagline: Redesigning your application to run multithreaded on a multicore machin
 ---
 {% include JB/setup %}
 
-**Memory model for effective concurrency. Part I**
+**Memory models for effective concurrency.**
 <!--more-->
 
 Modern multi-core CPUs are extremely powerful. But not all kind of applications are able to take advantage of this computational power. Indeed, this multicore revolution is a kind of force that pushes towards the adoption of new techniques in concurrent programming. This first part covers the state-of-art, the most used techniques and tools for concurrency. Starting from the fundamentals of concurrency, I’ll show how to take advantage of memory models and the modern CPUs' architecture for running programs extremely fast. As I hope it will become clear along the discussion, master these concepts is a treasure of extremely useful ideas for programming.
@@ -295,6 +295,8 @@ Unfortunately, **concurrency is notoriously hard**. A new class of programming e
 Write efficient concurrent programs requires a well domain knowledge, efficient data structures, ie lock-free or wait-free, and smart programming tools.
 
 Actually, the compilers also perform code transformation to speed up code execution. However, **in a multi-thread environment, many commons code optimizations end in adding a data race**. In these situations is very hard to reason when transformation made by compiler are **safe or not**. To deal with this complexity, hardware vendors, researchers and working-groups all around the worlds, put toghether their efforts to guarantee that **any kind of optimization (hardware or software), must be thread-aware**. Actually, the most used modern programming languages, ie **Java** and **C++**, use memory models.
+
+>Memory synchronization actively works against important modern hardware optimizations - Herb Sutter
 
 **A memory model, or *memory consistency model*, constrains the transformations that any part of a system, ie compiler/JIT or CPU, may perform**. Sequential consistency, defined by *Leslie Lamport*, is the most intuitive memory model. It ensures that *memory operations in all threads appear to occur in a single total order*. Further, within this total order, all memory operations of a given thread appear in the program order for that thread. The biggest problem of sequential consistency model is that it is too much restrictive and the speed execution is *quite slow*. It blocks many common optimizations and, as a consequence, it can become a performance bottleneck. An alternative approach proposed to preserve the sequential consistency's simplicity and to overcome its performance limitations, which is the one used by Java and C++, is the so called **data-race-free model**. This model introduces the notion of *correct programs* as those that do not contain data races, ie are well synchronized. It guarantees sequential consistency for programs without data races and has undefined semantics in the presence of a data race. The first consequence of the adoption of a memory model, is that is not cost-free. **Programmability and performance are clearly affected**, because now any part of the system that makes transformation must respect some contraints specified by the memory model.
 
