@@ -26,9 +26,9 @@ and also an interesting course called [Innovation: the World's Greatest](https:/
 
 <div style="text-align:center" markdown="1">
 
-<b>Mind map: Starting a Business</b>([download]({{ site.url }}/assets/images/mind_maps/startup/Starting_a_business.png))
+<b>Mind map: Starting a Business</b>([download]({{ site.url }}/assets/images/mind_maps/startup/Starting_a_business.jpg))
 <br>    
-![]({{ site.url }}/assets/images/mind_maps/startup/STARTING_A_BUSINESS.jpg "Starting a Business")
+![]({{ site.url }}/assets/images/mind_maps/startup/STARTING_A_BUSINESS.png "Starting a Business")
 
 </div>
 
