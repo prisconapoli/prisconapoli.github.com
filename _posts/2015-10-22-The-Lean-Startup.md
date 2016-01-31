@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Development
-tags: [lean start-up, mind map]
+tags: [lean, start-up, mind map]
 image : mind_maps/startup/image.jpg
 tagline: A startup is a human institution designed to create a new product or service under conditions of extreme uncertainty -  Eric Ries, The Lean Startup
 ---
