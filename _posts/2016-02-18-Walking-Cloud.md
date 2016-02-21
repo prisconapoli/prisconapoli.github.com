@@ -39,7 +39,7 @@ Last week I found a very article titled [A view of Cloud Computing](http://www.c
 
 > “The interesting thing about cloud computing is that we’ve redefined cloud computing to include everything that we already do. I can’t think of anything that isn’t cloud computing with all of these announcements. The computer industry is the only industry that is more fashion-driven than women’s fashion. Maybe I’m an idiot, but I have no idea what anyone is talking about. What is it? It’s complete gibberish. It’s insane. When is this idiocy going to stop?” – Larry Ellison, chairman, Oracle
 
-####Top 10 obstacles to and opportunities for growth of cloud computing.
+#### Top 10 obstacles to and opportunities for growth of cloud computing.
 
 - Availability/business Continuity
 
@@ -59,7 +59,7 @@ Last week I found a very article titled [A view of Cloud Computing](http://www.c
 
 - Reputation Fate Sharing
 
-10) Software Licensing
+- Software Licensing
 
 <div style="text-align:center" markdown="1">
 
