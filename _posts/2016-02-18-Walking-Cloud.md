@@ -13,16 +13,16 @@ tagline: I don’t need a hard disk in my computer if I can get to the server fa
 
 Last week I found a very article titled [A view of Cloud Computing](http://www.cs.berkeley.edu/~rxin/db-papers/cloudcomputing.pdf), published on *Communications of thE ACM* in April 2010. The article has been wrote with the aim to reduce the confusion by clarifying terms, providing simple figures to quantify comparisons between of cloud and conventional computing, and identifying the top technical and non-technical obstacles and opportunities of cloud computing.
 
-####Cloud Computing: The composite of SaaS and utility computing
+#### Cloud Computing: The composite of SaaS and utility computing
 
-####Refers to:
+#### Refers to:
 
 - applications delivered over the Internet
 
 - Hardware and systems software in data centers that provide these services
 
 
-####What Cloud Computing Brings to the Table
+#### What Cloud Computing Brings to the Table
 
 - The appearance of infinite computing resources available on demand
 
