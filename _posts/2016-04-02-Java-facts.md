@@ -11,14 +11,14 @@ tagline: Learning the art of programming, like most other disciplines, consists 
 
 <!--more-->
 
-# Not full Object-Oriented
+## Not full Object-Oriented
 The Java programming language is object-oriented with single inheritance. Despite it is the  most famous object oriented programming language, inside a method is possible to use only an imperative statement-oriented coding style. 
 
-# Refactoring
+## Refactoring
 Bear in mind the fundamental goals of refactoring are the **improvement of system structure** and the **avoidance of code duplication**. Better to repeat again: **system structure** and **code duplication**. 
 
 
-# Rules before yourself
+## Rules before yourself
 Programmer or Software Archithect, no matter what's your job. Respect few fundamental rules:
  + clarity and simplicity come first
  + Don't make surprises, e.g. preserve the expected behavior
@@ -51,12 +51,14 @@ Disadvantage:
  - JavaBeans patterns, call a parameterless constructor to create the object and then call setter methods to set each required parameters and each optional parameter of interest. Problem: 1. It can be in an inconsistent state through its construction. 2. Can't create immutable object
  - Builder pattern: call a constructor with the required parameters, and gets a builder object (so use a public static class). Then the client calls *setter-like* methods on the builder object to set each optional parameter of interest. Finally, the client calls a parameterless build method to generate the object (which is a private class) , which is immutable.
 
+
 ## Best way to implement a singleton
 A singleton is a class that is instantiated exactly one. They are used to model single resources in the system.
 - private constructor and public static final member. Vulnerable to AccessibleObject.setAccessible method.
 - private constructor, private static final member, public static method.
 Both the approaches above are vulnerable if the serialization is not well implemented. All fields need to be declared transient and provide an 'object readResolve()' method.
 - make an enum type with one element. Serialization for free. Guaranteed one instance. Thread save. It works because enum fields are compile time constants, but they are instances of their enum type.  And, they're constructed when the enum type is referenced for the first time.
+
 
 ## Non instantiability
 Making a class abstract does not work well to prevent that a class is instantiated through a subtype. In this situations, the rigth approach is making the constructor private.
