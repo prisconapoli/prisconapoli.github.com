@@ -77,22 +77,22 @@ In particular, should be used only for cleanup of non-Java resources.
 Another oddity is the missing of *finalizer chaining* which is not performed automatically.
 
 ## Overriding equals
-In a nutshell, the important concept is the difference between **logical equality** and **object identity**. Don't override the equals method if:
--each instance is unique
--there is no concept of logical equality
--an appropriate equals is already implemented in a superclass
--private class/package, and you know equals will never be invoked.
+In a nutshell, the important concept is the difference between **logical equality** and **object identity**.
+Don't override the equals method if:
+- each instance is unique
+- there is no concept of logical equality
+- an appropriate equals is already implemented in a superclass
+- private class/package, and you know equals will never be invoked.
 
 When override? whenever a class has a notion of **logical equality that differs from mere object identity**. This is generally true for value classes: classes which represent a value. For these classes, you need *satisfy the programmer expectation*.
-
 With inheritance, is very easy implement badly the equals method, and violates both simmetry and transitivity properties.
 
 
-##Dont't forget hashCode()
+## Dont't forget hashCode()
 hashCode has to be overriden everytime equals has been overridden. **Equal objects must have the same hash code**.
 
 
-##And toString(), of course!
+## And toString(), of course!
 It is recommended that all subclasses override this method. So, do it!
 Provide a good *toString()** implementation makes a class much more pleasant to use.
 
@@ -103,7 +103,7 @@ So please do a little effort, and design this method with the goal to **return a
 Is considered a good practice document the format used and provide static methods to easily translate back and forth between the object and its string representation. Whetever* or not you specify the format, provide programmatic access to all of the information contained in the value returned by toString.
 
 
-##Clone it, but judiciously
+## Clone it, but judiciously
 The Cloneable interface is pretty weird, cause it has any methods. It modifies the behaviour of a protected method on a superclass, e.g **Object**'s protected *clone* method implementation.
 
 The general contract for the *clone* method is weak. It creates and return copy of this object, but the precise meaning of "copy" may depend on the class of the object. The general intent is:
@@ -117,13 +117,13 @@ In practice, a class that implements *Cloneable* is expected to provide a proper
 
 The *clone* architecture is incompatible with normal use of final fields referring to mutable objects, except in cases where the mutable objects may be safely shared between an object and its clone.
 
-##Comparable and compareTo()
+## Comparable and compareTo()
 *compareTo()* is the sole method in the Comparable interface. It is not declared in **Object** class. It is used to define *natural ordering*. It is similar to *equals* method, except it permits order comparisons in addition to simple equality comparison.
 
 A class that violates the *compareTo()* contract can break other classes that depend on the comparison, e.g. *TreeSet and *TreeMap. Other interfaces like *Collection*, *Set* or *Map* use the *equals* method, and this can lead to inconsistent results, e.g. entry duplication.
 Also, *compareTo* requires an update everytime a new field is added to a class.
 
-##Hide module's details
+## Hide module's details
 Decouples the modules that comprise a system is a primary goal for a good design.
 
 Information hiding is not just a theoretical things or a fancy style in object-oriented programming. There is a massive practical impact with information hiding. It enables parallel development and testing, effective performance tuning, software reuse!
@@ -133,13 +133,13 @@ If you think that information hiding is hard to describe or implement, just foll
 That means, use the lowest possible access level consistent with the solution you are developing.
 Instance fields should never be public. Classes with mutable fields are not thread-safe. By making the field public you give up the flexibility to switch to a new internal data representation in which the field does not exist.
 
-##Prefer accessors over public fields for public classes
+## Prefer accessors over public fields for public classes
 If a class is accessible outside its package, provide accessor methods, to preserve the flexibility to change the class's internal representation. 
 *Never never never* expose mutable fields in public classes! It is, however, sometimes desiderable for package-private or private nested classes to expose fields, whether mutable or immutable.
 If a class exposes its data fields, all hope of changing its internal representation is lost, as client code can be distributes far and wide.
 If you can help to expose fields directly, is less harmful if the fields are immutable.
 
-##Immutable class is better (and resist the urge to write a setter for every getter)
+## Immutable class is better (and resist the urge to write a setter for every getter)
 An immutable class is simply a class whose instances cannot be modified. All of the information contained in each instance is provided when it is created and is fixed for lifetime of the object.
 
 **Classes should be immutable unless there is a very good reason to make them mutable.** And if a class cannot be made immutable, limit its mutability as much as possible.
@@ -167,16 +167,16 @@ They can be shared freely. Immutable classes should take advantage of this by en
 
 The only real disadvantage of immutable classes is that they require a **separate object for each distinct value**. Creating this object can be costly.
 
-##The functional approach
+## The functional approach
 In the functional approach, every methods return the result of applying a function to their operand without modifying thme. Contrast this to the more common procedural or imperative approach in which methods apply a procedure to their operand, causing *its state to change*.
 The functional approach may appear unnatural if you’re not familiar with it, but it enables immutability, which has many advantages. Immutable objects are simple, fast and secure.
 
-##Constructors
+## Constructors
 The purpose of a constructor is not limited to the creation of an instance of a specific class and the initialization of its fields. It's main purpose is to establish all object's **invariants**.
 
 Don’t provide a public initialization method separate from the constructor or static factory unless there is a compelling reason to do so. Similarly, don’t provide a kind of *reinitialize()* method that enables an object to be reused as if it had been constructed with a different initial state. Such methods generally provide little if any performance benefit at the expense of increased complexity.
 
-##Favor composition over inheritance
+## Favor composition over inheritance
 Inheritance is a powerful way to achieve code reuse, but it is not always the best tool for the job.  Used inappropriately, it leads to fragile software.  It's safe use inheritance within a package, because classes and subclasses are under control of the same programmer. **But inheriting from ordinary concrete classes across package boundaries is dangerous**.
 To avoid problem, a subclass must evolve in tandem with its superclass, unless the superclass's authors have designed and documented it specifically for the purpose of being exented.
 
@@ -187,7 +187,7 @@ To avoid problem, a subclass must evolve in tandem with its superclass, unless t
 Use inheritance where composition is appropriate is dangerous. First, implementation details are exposed needlessly. The resulting API ties you to the original implementation, forever limiting the performance of your class. More seriously, by exposing the internals you let the client access them directly. At the very least, this can lead to confusing semantics.
 And at very very least, if the API has any flows, you could propagate these flaws inside your class.
 
-##Inheritance places limitations on the class
+## Inheritance places limitations on the class
 The following sentence is very important, so read it carefully and most important, keep it in you mind if you want design good code and not rubbish.
 
 **Designing a class for inheritance places substantial limitations on the class.**
@@ -202,7 +202,7 @@ If the class designed for inheritance implements Cloneable or Serializable, reme
 
 Each time a change is made in such a class, there is a chance that client classes that extend the class will break. The best solution to this problem is to prohibit subclassing in classes that are not designed and documented to be safely subclassed. The easier of the two is to declare the class final. The alternative is to make all the constructors private or package-private and to add public static factories in place of the constructors
 
-##For API designers.... No sorry, I meant for all
+## For API designers.... No sorry, I meant for all
 -Don't violate principle of least astonishment
 -Don't violate the abstraction hierarchy
 -Don't use similar names for widely different behaviours
@@ -214,7 +214,7 @@ Only four of the six comparison operators work on boxes primitives:
 2. == and != do not work
 
 
-##Abstract classes and Interfaces
+## Abstract classes and Interfaces
 The real practical use of an abstract class is that it can be used as type definition. The restrictions related to single inheritance are a pretty big limitation. Abstract classes enable the construction of rigid hierarchical frameworks.
 
 Interfaces are on the opposite side. Their ideal use is for defining a so called*mixing*, a type that a class can implement in addition to its primary type to declare that it provides some optional behaviour. For their nature, interfaces enable safe and powerful functionality enhancements via the wrapper class idiom. However, they are not permitted to contain method implementations.
