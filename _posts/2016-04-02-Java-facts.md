@@ -78,11 +78,10 @@ Another oddity is the missing of *finalizer chaining* which is not performed aut
 
 ## Overriding equals
 In a nutshell, the important concept is the difference between **logical equality** and **object identity**. Don't override the equals method if:
- - each instance is unique
- - there is no concept of logical equality
- - an appropriate equals is already implemented in a superclass
- - private class/package, and you know equals will never be invoked.
-
+-each instance is unique
+-there is no concept of logical equality
+-an appropriate equals is already implemented in a superclass
+-private class/package, and you know equals will never be invoked.
 
 When override? whenever a class has a notion of **logical equality that differs from mere object identity**. This is generally true for value classes: classes which represent a value. For these classes, you need *satisfy the programmer expectation*.
 
