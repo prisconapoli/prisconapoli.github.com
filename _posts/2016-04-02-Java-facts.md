@@ -83,12 +83,15 @@ In a nutshell, the important concept is the difference between **logical equalit
  - an appropriate equals is already implemented in a superclass
  - private class/package, and you know equals will never be invoked.
 
+
 When override? whenever a class has a notion of **logical equality that differs from mere object identity**. This is generally true for value classes: classes which represent a value. For these classes, you need *satisfy the programmer expectation*.
 
 With inheritance, is very easy implement badly the equals method, and violates both simmetry and transitivity properties.
 
+
 ##Dont't forget hashCode()
 hashCode has to be overriden everytime equals has been overridden. **Equal objects must have the same hash code**.
+
 
 ##And toString(), of course!
 It is recommended that all subclasses override this method. So, do it!
@@ -99,6 +102,7 @@ This method is automatically invoked when an object is passed to *println*, *pri
 So please do a little effort, and design this method with the goal to **return all of the interesting information contained in the object**.
 
 Is considered a good practice document the format used and provide static methods to easily translate back and forth between the object and its string representation. Whetever* or not you specify the format, provide programmatic access to all of the information contained in the value returned by toString.
+
 
 ##Clone it, but judiciously
 The Cloneable interface is pretty weird, cause it has any methods. It modifies the behaviour of a protected method on a superclass, e.g **Object**'s protected *clone* method implementation.
